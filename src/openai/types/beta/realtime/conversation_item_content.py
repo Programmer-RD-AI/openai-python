@@ -25,5 +25,5 @@ class ConversationItemContent(BaseModel):
     transcript: Optional[str] = None
     """The transcript of the audio, used for `input_audio` content type."""
 
-    type: Optional[Literal["input_text", "input_audio", "item_reference", "text"]] = None
+    type: Optional[Literal["input_text", "input_audio", "item_reference", "text", "audio"]] = None
     """The content type (`input_text`, `input_audio`, `item_reference`, `text`)."""
